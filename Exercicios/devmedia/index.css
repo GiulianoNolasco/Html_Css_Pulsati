@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:300,400,500,700|Roboto:400,500|Montserrat:300,400,500,600,200,700|Poppins:200,300,400,500,600,700|Inter:200,300,400,500,600,700");
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat";
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -61,9 +61,11 @@ a:hover {
   width: 245px;
 }
 .menudireita button {
+  font-size: 12px;
   cursor: pointer;
   height: 35px;
-  width: 150px;
+  width: auto;
+  padding: 10px 10px 10px 10px;
   border: none;
   border-radius: 20px;
   color: white;
@@ -79,34 +81,54 @@ a:hover {
 }
 
 .main {
-  margin-left: 20px;
+  margin-left: 95px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
 .main label {
-  font-size: x-large;
+  font-weight: 600;
+
+  font-size: 26px;
   display: flex;
-  padding-top: 15px;
+  padding-top: 35px;
 }
 .main h1 {
-  font-size: xx-large;
+  font-weight: 600;
+  text-align: left;
+  font-size: 65px;
   display: flex;
-  padding-top: 15px;
 }
 
-.main h2 {
-  font-size: larger;
-  display: flex;
+.texto {
+  font-size: 27px;
+  font-weight: 400;
   padding-top: 15px;
 }
-.main div {
+.texto span {
+  font-size: 27px;
+  font-weight: bold;
+}
+.textodiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 25px;
 }
+.botoes2 {
+  display: flex;
+  gap: 10px;
+  padding-top: 50px;
+}
+
 .main button {
   cursor: pointer;
-  height: 35px;
-  width: 150px;
+  padding: 20px;
+  width: auto;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+
   border: none;
   border-radius: 5px;
   color: white;
@@ -120,10 +142,7 @@ a:hover {
 }
 
 .central {
+  background-color: rgb(233, 232, 232);
   display: flex;
-  justify-content: center;
-}
-.central img {
-  height: 500px;
-  width: 700px;
+  justify-content: space-around;
 }
