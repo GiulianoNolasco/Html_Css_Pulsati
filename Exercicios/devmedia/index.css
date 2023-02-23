@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: max-content;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  height: 75px;
+  color: grey;
+}
+
+.logo {
+  border: 1px solid rgb(232, 232, 232);
+  width: max-content;
+}
+.logo img {
+  cursor: pointer;
+  margin: 20px;
+  width: 140px;
+  height: 30px;
+}
+
+.header {
+  border: 1px solid rgb(232, 232, 232);
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuesquerda {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  gap: 25px;
+  margin-left: 20px;
+}
+
+a:hover {
+  color: black;
+}
+
+.menudireita {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 245px;
+}
+.menudireita button {
+  cursor: pointer;
+  height: 35px;
+  width: 160px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(48, 199, 204);
+}
+.menudireita button:hover {
+  background-color: rgb(58, 157, 134);
+}
+.menudireita i {
+  cursor: pointer;
+
+  font-size: x-large;
+}

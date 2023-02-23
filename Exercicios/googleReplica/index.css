@@ -1,22 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 * {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: max-content;
 }
-body {
-  background-color: white;
-}
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .central {
-  margin-top: 180px;
+  margin-top: 205px;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 header {
   display: flex;
@@ -24,46 +28,112 @@ header {
   justify-content: end;
   align-items: end;
 }
+
 img {
   max-width: 270px;
 }
 
 input {
-  border: rgb(228, 225, 225) 1px solid;
-  border-radius: 35px;
+  outline: none;
+  border: none;
   width: 400px;
   height: 45px;
-  @font-face {
-    font-family: fontgoogle;
-    src: url(./Product\ Sans\ Regular.ttf);
-  }
 }
 
-input:hover {
-  box-shadow: grey 1px 1px 0.1px;
-  box-shadow: grey -1px -1px 0.1px;
-}
-
-button {
-  @font-face {
-    font-family: fontgoogle;
-    src: url(./Product\ Sans\ Regular.ttf);
-  }
+div button {
+  cursor: pointer;
   color: rgb(79, 78, 78);
   background-color: rgba(224, 221, 221, 0.19);
-  border: none;
-  border-radius: 5px;
   margin-top: 30px;
   height: 38px;
   width: 140px;
+  border: none;
+  border-radius: 5px;
+}
+div button:hover {
+  box-shadow: 0px 0px 3px grey;
 }
 
 .botoes {
-  background-color: white;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  gap: 20px;
-  /* flex-wrap: wrap; */
+  gap: 15px;
   flex-direction: row;
+}
+
+header button {
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(58, 101, 231);
+  height: 38px;
+  width: 125px;
+}
+header button:hover {
+  background-color: rgb(53, 91, 205);
+}
+header img {
+  margin-left: 10px;
+}
+
+label {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: auto;
+}
+
+label:hover {
+  text-decoration: underline;
+}
+
+.pesquisa {
+  border: 1px solid rgb(202, 199, 199);
+  margin: 0 auto;
+  margin-top: 28px;
+  max-width: 580px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0 15px;
+}
+.pesquisa:hover {
+  box-shadow: 0 0 7px rgb(222, 218, 218);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: grey;
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+}
+footer div:nth-child(1) {
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+footer div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+footer div div:nth-child(1) {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+footer div div:nth-child(2) {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
 }
