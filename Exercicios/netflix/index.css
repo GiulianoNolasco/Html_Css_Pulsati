@@ -1,0 +1,76 @@
+html {
+  background-image: url(fundonetflix.jpg);
+  overflow: hidden;
+}
+
+* {
+  font-family: "Netflix Sans", Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: max-content;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.caixa {
+  margin-top: 30px;
+  background-color: rgb(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  height: 700px;
+  width: 450px;
+  margin: auto;
+  position: relative;
+}
+
+img {
+  padding-left: 56px;
+  padding-top: 25px;
+  height: 70px;
+  width: 225px;
+}
+
+.caixacentral {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  margin: auto;
+  height: 100%;
+  padding-top: 60px;
+  padding-left: 55px;
+}
+.caixacentral h1 {
+  color: white;
+  font-size: 32px;
+}
+.caixacentral input {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  height: 55px;
+  width: 325px;
+  background-color: rgb(63, 63, 63);
+}
+
+.caixacentral button {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 325px;
+  background-color: rgb(205, 27, 27);
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.caixacentral input::placeholder {
+  color: grey;
+  font-size: 17px;
+  padding: 20px;
+}

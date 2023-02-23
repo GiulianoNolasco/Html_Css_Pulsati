@@ -40,6 +40,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.header a {
+  color: initial;
+  text-decoration: none;
+}
 
 .menuesquerda {
   width: 100%;
@@ -128,7 +132,6 @@ a:hover {
   height: 60px;
   font-size: 20px;
   font-weight: 600;
-
   border: none;
   border-radius: 5px;
   color: white;
