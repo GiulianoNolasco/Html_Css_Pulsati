@@ -15,19 +15,19 @@ utilizada para interação com o usuário em sua essência
 ```html
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Exemplo</title>
-   </head>
-   <body>
-      <script src="arquivo.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo</title>
+  </head>
+  <body>
+    <script src="arquivo.js"></script>
 
-      <script>
-         codigo JavaScript
-      </script>
-   </body>
+    <script>
+      codigo JavaScript
+    </script>
+  </body>
 </html>
 ```
 
@@ -81,7 +81,7 @@ Representa um valor do tipo texto.
 Exemplo:
 
 ```js
-var nomeCurso = 'Academia Frontend';
+var nomeCurso = "Academia Frontend";
 ```
 
 ### Tipos de Dados Objeto
@@ -100,7 +100,7 @@ quanto a criação e utilização de objetos.
 // para vermos o tipo da variavel basta utilizar
 // o operador typeof(variavel)
 
-let dados = 'teste';
+let dados = "teste";
 console.log(typeof dados);
 // vai escrever no console      String
 ```
@@ -257,11 +257,11 @@ ao decorrer do programa. que podem ou não retornar valor
 
 ```js
 function nome_da_funcao(lista_de_parametros) {
-   //corpo da função
+  //corpo da função
 }
 
 function soma(a, b) {
-   return a + b;
+  return a + b;
 }
 ```
 
@@ -271,7 +271,7 @@ Funções anônimas são funções criadas sem a definição de nome.
 
 ```js
 let soma = function (a, b) {
-   return a + b;
+  return a + b;
 };
 
 console.log(soma(1, 2));
@@ -287,9 +287,9 @@ console.log(soma(1, 2));
 let desconto = true;
 
 if (desconto == true) {
-   // Executa o código aqui dentro
+  // Executa o código aqui dentro
 } else {
-   //se nao executa esse aqui
+  //se nao executa esse aqui
 }
 ```
 
@@ -298,7 +298,7 @@ if (desconto == true) {
 ```js
 let idade = 17;
 
-let mensagem = idade >= 18 ? 'Maior' : 'Menor';
+let mensagem = idade >= 18 ? "Maior" : "Menor";
 ```
 
 `Switch Case`
@@ -307,14 +307,14 @@ let mensagem = idade >= 18 ? 'Maior' : 'Menor';
 let expressao = 1;
 
 switch (expressao) {
-   case 1:
-      console.log(1);
-      break;
-   case 2:
-      console.log(2);
-      break;
-   default:
-      console.log('Outro valor');
+  case 1:
+    console.log(1);
+    break;
+  case 2:
+    console.log(2);
+    break;
+  default:
+    console.log("Outro valor");
 }
 ```
 
@@ -328,8 +328,8 @@ de código enquanto uma determinada condição seja verdadeira
 let count = 0;
 
 while (count < 10) {
-   console.log(count);
-   count++;
+  console.log(count);
+  count++;
 }
 ```
 
@@ -342,7 +342,7 @@ trecho de código em um número determinado de vezes.
 */
 
 for (let count = 0; count < 10; count++) {
-   console.log(count);
+  console.log(count);
 }
 ```
 
@@ -353,10 +353,10 @@ for (let count = 0; count < 10; count++) {
 O operador for .. of foi adicionado no ES6 e tem por finalidade 
 percorrer os valores de um objeto iterável
 */
-let frutas = ['Maçã', 'Banana', 'Abacaxi'];
+let frutas = ["Maçã", "Banana", "Abacaxi"];
 
 for (let fruta of frutas) {
-   console.log(fruta);
+  console.log(fruta);
 }
 ```
 
@@ -370,8 +370,8 @@ Para declarar um texto em Javascript de forma literal podemos utilizar aspas sim
 No exemplo abaixo as duas declarações estão corretas.
 
 ```js
-let nome = 'João';
-let email = 'joao@teste.com';
+let nome = "João";
+let email = "joao@teste.com";
 ```
 
 `Length`
@@ -380,7 +380,7 @@ Retorna a quantidade de caracteres em um texto.
 
 ```js
 //Exemplo
-let escola = 'Apex ensino';
+let escola = "Apex ensino";
 console.log(escola.length); // retorna 11
 ```
 
@@ -390,8 +390,8 @@ Retorna um novo texto com o resultado da união do texto base com o texto passad
 ```js
 //Exemplo
 
-let nome = 'João';
-let sobrenome = ' da Silva';
+let nome = "João";
+let sobrenome = " da Silva";
 let nomeCompleto = nome.concat(sobrenome);
 console.log(nomeCompleto); //escreve 'João da Silva'.
 ```
@@ -400,7 +400,7 @@ console.log(nomeCompleto); //escreve 'João da Silva'.
 Retorna o caractere da posição informada.
 
 ```js
-let escola = 'APEX';
+let escola = "APEX";
 console.log(escola.charAt(0));
 //retorna a letra A (primeira letra do texto)
 ```
@@ -410,8 +410,8 @@ Retorna o índice em que se encontra um determinado caracter.
 Caso o caracter informado não exista retorna o valor -1;
 
 ```js
-let escola = 'Apex';
-console.log(escola.indexOf('e')); // retorna 2
+let escola = "Apex";
+console.log(escola.indexOf("e")); // retorna 2
 ```
 
 `trim`
@@ -419,7 +419,7 @@ Retorna uma nova String sem os caracteres em branco do início
 e do fim do texto.
 
 ```js
-let nome = ' Maria ';
+let nome = " Maria ";
 console.log(nome.trim()); //retorna ‘Maria’
 ```
 
@@ -428,16 +428,16 @@ Retorna uma nova string a partir de um subconjunto da string original
 passando de um ponto ou de quanto até quando cortar da string
 
 ```js
-console.log('Maria'.substring(2)); // retorna 'ria'
-console.log('Maria'.substring(0, 2)); // retorna 'Ma'
+console.log("Maria".substring(2)); // retorna 'ria'
+console.log("Maria".substring(0, 2)); // retorna 'Ma'
 ```
 
 `split`
 Cria um array com a separação do texto conforme o parâmetro informado
 
 ```js
-let linha = 'Eva;eva@teste.com;33221100';
-let dados = linha.split(';');
+let linha = "Eva;eva@teste.com;33221100";
+let dados = linha.split(";");
 console.log(dados[0]); //Eva
 console.log(dados[1]); //eva@teste.com
 console.log(dados[2]); // 33221100
@@ -447,23 +447,23 @@ console.log(dados[2]); // 33221100
 Funções adicionadas na versão ES6 e determina se o texto inicia ou termina com os caracteres informados no parâmetro.
 
 ```js
-Console.log('Apex'.startsWith('A')); //true
-Console.log('Apex'.endsWith('M')); //false
+Console.log("Apex".startsWith("A")); //true
+Console.log("Apex".endsWith("M")); //false
 ```
 
 `toLowerCarse toUpperCase`
 Funções que convertem a string para versões minusculas e maiusculas
 
 ```js
-console.log('AbAcAXI'.toUpperCase()); // ABACAXI
-console.log('AbAcAXI'.toLowerCase()); // abacaxi
+console.log("AbAcAXI".toUpperCase()); // ABACAXI
+console.log("AbAcAXI".toLowerCase()); // abacaxi
 ```
 
 `replace`
 Retorna uma nova string com a substituição de parte do texto pelos parâmetros informados
 
 ```js
-console.log('Cristiano'.replace('o', 'e')); //Cristiane
+console.log("Cristiano".replace("o", "e")); //Cristiane
 ```
 
 `template String`
@@ -471,8 +471,8 @@ Template string é um recurso adicionado no ES6 e serve para criarmos templates 
 ser completados com valores de variáveis.
 
 ```js
-let nome = 'Johnny';
-let sobrenome = 'Seubert';
+let nome = "Johnny";
+let sobrenome = "Seubert";
 
 console.log(`${nome} ${sobrenome}`); // Johnny Seubert
 ```
@@ -504,9 +504,9 @@ console.log(idades[2]) // 44
 `Adicionar elementos a um array`
 
 ```js
-let nomes = ['Maria'];
+let nomes = ["Maria"];
 
-nomes.push('Johnny');
+nomes.push("Johnny");
 
 console.log(nomes[1]); //Johnny
 ```
@@ -540,28 +540,28 @@ nomes2 = ['Rafaela']
 Para transformar um array em texto podemos utilizar a função join
 
 ```js
-let nomes = ['Adão', 'Eva', 'José', 'Maria'];
+let nomes = ["Adão", "Eva", "José", "Maria"];
 
-console.log(nomes.join('->')); //escreve Adão->Eva->José->Maria
+console.log(nomes.join("->")); //escreve Adão->Eva->José->Maria
 ```
 
 `Ordenar array`
 
 ```js
-let comidas = ['banana', 'maça', 'abacaxi'];
+let comidas = ["banana", "maça", "abacaxi"];
 
 console.log(comidas.sort()); // [ 'abacaxi', 'banana', 'maça' ]
 
 let numeros = [5, 3, 7, 1, 10];
 
 numeros.sort(function (num1, num2) {
-   if (num1 > num2) {
-      return 1;
-   } else if (num1 == num2) {
-      return 0;
-   } else {
-      return -1;
-   }
+  if (num1 > num2) {
+    return 1;
+  } else if (num1 == num2) {
+    return 0;
+  } else {
+    return -1;
+  }
 });
 
 console.log(numeros);
@@ -580,7 +580,7 @@ let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // MAP
 let numerosMultiplicados = numeros.map(function (numero) {
-   return numero * 2;
+  return numero * 2;
 });
 ```
 
@@ -590,10 +590,10 @@ let numerosMultiplicados = numeros.map(function (numero) {
 A função Filter é como se fosse um for que percorre todo o array e apenas retorna aquilo que satisfaz a condição
 
 ```js
-let nomes = ['Luciana', 'Eva', 'Juriscleide', 'Maria'];
+let nomes = ["Luciana", "Eva", "Juriscleide", "Maria"];
 
 let nomesGrandes = nomes.filter(function (nome) {
-   return nome.length > 5;
+  return nome.length > 5;
 });
 ```
 
@@ -601,10 +601,10 @@ let nomesGrandes = nomes.filter(function (nome) {
 A função some verifica se algum valor do array satisfaz a condição
 
 ```js
-let nomes = ['Luciana', 'Eva', 'Juriscleide', 'Maria'];
+let nomes = ["Luciana", "Eva", "Juriscleide", "Maria"];
 
 let existeMaria = nomes.some(function (nome) {
-   return nome == 'Maria';
+  return nome == "Maria";
 });
 
 existeMaria == true;
@@ -617,14 +617,14 @@ existeMaria == true;
 ```js
 let pessoa = {};
 
-pessoa.nome = 'Johnny'; // Adiciona a propriedade nome ao objeto
+pessoa.nome = "Johnny"; // Adiciona a propriedade nome ao objeto
 ```
 
 --- Exercicios
 
 ## Aula 02
 
--  Exercicios sem DOM
+- Exercicios sem DOM
 
 ---
 
@@ -637,12 +637,12 @@ Arrow Function foi introduzida na versão ES6, e possui uma sintaxe mais curta q
 ```js
 //função normal
 function NomeDaFuncao(Parametros) {
-   //Código
+  //Código
 }
 
 //Arrow Function
 const variavel = (parametros) => {
-   //Códigos
+  //Códigos
 };
 ```
 
@@ -661,39 +661,39 @@ possui uma série de funções para a manipulação do documento.
 ```html
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
-      <title>Título</title>
-      <style>
-         .azul {
-            color: blue;
-         }
+  <head>
+    <meta charset="utf-8" />
+    <title>Título</title>
+    <style>
+      .azul {
+        color: blue;
+      }
 
-         .verde {
-            color: green;
-         }
-      </style>
-   </head>
+      .verde {
+        color: green;
+      }
+    </style>
+  </head>
 
-   <body>
-      <h1 id="titulo">Título grande</h1>
-      <h3>Subtítulo</h3>
-      <h4>Nome</h4>
-      <ul id="listaNomes">
-         <li class="verde">Adão</li>
-         <li class="azul">Eva</li>
-         <li class="verde">João</li>
-         <li class="azul">Maria</li>
-      </ul>
-      <form>
-         <label>Nome</label>
-         <input id="txtNome" name="txtNome" value="teste" />
-         <button type="submit">Enviar</button>
-      </form>
+  <body>
+    <h1 id="titulo">Título grande</h1>
+    <h3>Subtítulo</h3>
+    <h4>Nome</h4>
+    <ul id="listaNomes">
+      <li class="verde">Adão</li>
+      <li class="azul">Eva</li>
+      <li class="verde">João</li>
+      <li class="azul">Maria</li>
+    </ul>
+    <form>
+      <label>Nome</label>
+      <input id="txtNome" name="txtNome" value="teste" />
+      <button type="submit">Enviar</button>
+    </form>
 
-      <script src="script.js"></script>
-   </body>
-   <html></html>
+    <script src="script.js"></script>
+  </body>
+  <html></html>
 </html>
 ```
 
@@ -705,7 +705,7 @@ Para acessar os elementos da página através do seu id podemos utilizar a funç
 Esta função nos retorna um objeto que contém as informações do elemento desejado.
 
 ```js
-var elemento = document.getElementById('titulo');
+var elemento = document.getElementById("titulo");
 console.log(elemento.innerHTML); // retorna "Título grande"
 ```
 
@@ -719,7 +719,7 @@ Esta propriedade recebe uma lista com todos os itens que tiverem a classe
 pois uma classe podemos ter em mais de um elemento na tela
 
 ```js
-let lista = document.getElementsByClassName('verde');
+let lista = document.getElementsByClassName("verde");
 console.log(lista[0]);
 ```
 
@@ -733,7 +733,7 @@ Esta propriedade recebe uma lista com todos os itens que forem daquela tag
 pois uma tag podemos ter em mais de uma na tela.
 
 ```js
-let lista = document.getElementsByTagName('li');
+let lista = document.getElementsByTagName("li");
 console.log(lista[0]);
 ```
 
@@ -744,9 +744,9 @@ console.log(lista[0]);
 A função `document.querySelector('')` serve para buscar algum item na tela podendo ser utilizado como um multi uso pois é possivel buscar id classe ou tag.
 
 ```js
-let elemento = document.querySelector('#titulo'); // quando for id
-let elemento = document.querySelector('.verde'); // quando for classe
-let elemento = document.querySelector('h1'); //quando for tag
+let elemento = document.querySelector("#titulo"); // quando for id
+let elemento = document.querySelector(".verde"); // quando for classe
+let elemento = document.querySelector("h1"); //quando for tag
 ```
 
 ---
@@ -756,8 +756,8 @@ let elemento = document.querySelector('h1'); //quando for tag
 A função querySelectorAll retorna uma lista de objetos no DOM
 
 ```js
-let lista = document.querySelectorAll('li');
-let lista2 = document.querySelectorAll('.verde');
+let lista = document.querySelectorAll("li");
+let lista2 = document.querySelectorAll(".verde");
 ```
 
 ---
@@ -767,10 +767,10 @@ let lista2 = document.querySelectorAll('.verde');
 Para alterarmos a estilização de um elemento podemos alterar as propriedades de estilo através da propriedade `style` do objeto
 
 ```js
-let elemento = document.querySelector('#titulo');
-elemento.innerHTML = 'meu texto';
+let elemento = document.querySelector("#titulo");
+elemento.innerHTML = "meu texto";
 
-elemento.style.color = 'red';
+elemento.style.color = "red";
 ```
 
 ---
@@ -782,8 +782,8 @@ quando vamos ler de um elemento normal utilizamos o innerText ou
 innerHTML
 
 ```js
-let input = document.getElementById('txtNome');
-let h1 = document.getElementById('titulo');
+let input = document.getElementById("txtNome");
+let h1 = document.getElementById("titulo");
 
 console.log(input.value);
 console.log(h1.innerHTML);
@@ -823,14 +823,14 @@ uma função de notificação. Esse registro é feito através da função addEv
 
 ```js
 //forma 1
-let titulo = document.getElementById('titulo');
-titulo.addEventListener('mouseover', (event) => {
-   console.log('mouse');
+let titulo = document.getElementById("titulo");
+titulo.addEventListener("mouseover", (event) => {
+  console.log("mouse");
 });
 
 //forma 2
-document.getElementById('titulo').addEventListener('mouseover', (event) => {
-   console.log('mouse');
+document.getElementById("titulo").addEventListener("mouseover", (event) => {
+  console.log("mouse");
 });
 ```
 
@@ -861,37 +861,37 @@ Para realizar requisições assíncronas é necessário utilizar o objeto `fetch
 
 Na Web possuimos diversos métodos para realizar requisições.
 
--  `GET` - para buscar informações
--  `POST` - para criar informações
--  `PUT` - para atualizar informações
--  `DELETE` - para deletar informações
+- `GET` - para buscar informações
+- `POST` - para criar informações
+- `PUT` - para atualizar informações
+- `DELETE` - para deletar informações
 
 ```js
 // GET
-fetch('https://api.github.com/users/diego3g');
+fetch("https://api.github.com/users/diego3g");
 
 // POST
-fetch('https://api.github.com/users/diego3g', {
-   // Configurações caso senha POST PUT ou DELETE
-   method: 'POST',
-   headers: {
-      'Content-Type': 'application/json',
-   },
-   body: JSON.stringify({ DADOS }),
+fetch("https://api.github.com/users/diego3g", {
+  // Configurações caso senha POST PUT ou DELETE
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ DADOS }),
 });
 
 // PUT
-fetch('https://api.github.com/users/diego3g', {
-   method: 'PUT',
-   headers: {
-      'Content-Type': 'application/json',
-   },
-   body: JSON.stringify({ DADOS }),
+fetch("https://api.github.com/users/diego3g", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ DADOS }),
 });
 
 // DELETE
-fetch('https://api.github.com/users/diego3g', {
-   method: 'DELETE',
+fetch("https://api.github.com/users/diego3g", {
+  method: "DELETE",
 });
 ```
 
@@ -899,58 +899,58 @@ fetch('https://api.github.com/users/diego3g', {
 
 ## Classes em JavaScript
 
--  Classes são a parte principal a POO (Programação Orientada a Objetos), no javascript puro ela não é muito utilizada pois as funcionalidades são bem limitadas, este problema é corrigido com o TypeScript.
+- Classes são a parte principal a POO (Programação Orientada a Objetos), no javascript puro ela não é muito utilizada pois as funcionalidades são bem limitadas, este problema é corrigido com o TypeScript.
 
 ```js
 class Pessoa {
-   nome = 'Fixo';
+  nome = "Fixo";
 
-   constructor(idade, email) {
-      this.idade = idade;
-      this.email = email;
-   }
+  constructor(idade, email) {
+    this.idade = idade;
+    this.email = email;
+  }
 
-   static showAllData() {
-      console.log(
-         `${this.nome} tem ${this.idade} anos e seu email é ${this.email}`
-      );
-   }
+  static showAllData() {
+    console.log(
+      `${this.nome} tem ${this.idade} anos e seu email é ${this.email}`
+    );
+  }
 }
 
 let lista = [
-   new Pessoa('Johnny', 20, 'jbseubert@gmail.com'),
-   new Pessoa('Maria', 21, 'nmar@gmail.com'),
+  new Pessoa("Johnny", 20, "jbseubert@gmail.com"),
+  new Pessoa("Maria", 21, "nmar@gmail.com"),
 ];
 
 // Atributos(Variáveis) ou Métodos(Funções) estaticos nao precisam ser instanciados
 Pessoa.showAllData();
 ```
 
--  Extender dados entre classes
+- Extender dados entre classes
 
 ```js
 class Animal {
-   constructor(name) {
-      this.name = name;
-   }
+  constructor(name) {
+    this.name = name;
+  }
 
-   fazerBarulho() {
-      console.log(this.name + ' fez barulho');
-   }
+  fazerBarulho() {
+    console.log(this.name + " fez barulho");
+  }
 }
 
 class Cachorro extends Animal {
-   constructor(name) {
-      super(name); //<==== executa o construtor da Classe extendida no caso Animal
-   }
+  constructor(name) {
+    super(name); //<==== executa o construtor da Classe extendida no caso Animal
+  }
 
-   fazerBarulho() {
-      console.log(this.name + ' latiu');
-   }
+  fazerBarulho() {
+    console.log(this.name + " latiu");
+  }
 }
 
-const animal = new Animal('Bixo');
-const cachorro = new Cachorro('Bob');
+const animal = new Animal("Bixo");
+const cachorro = new Cachorro("Bob");
 
 animal.fazerBarulho();
 cachorro.fazerBarulho();

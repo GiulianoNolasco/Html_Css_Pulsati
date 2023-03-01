@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Exercícios</title>
+    <title id="titulo5">Exercícios</title>
   </head>
   <body>
     <script src="js.js"></script>
+
     <div class="ex1">
       <p>Exercício 1:</p>
       <input id="num1" type="number" />
@@ -33,6 +34,46 @@
       <input id="num2" type="number" />
       <button onclick="calculadora()">Calcular</button>
       <p id="resposta"></p>
+    </div>
+
+    <div class="ex2">
+      <p>Exercício 2:</p>
+      <input id="num1ex02" type="number" onchange="tabuada()" />
+      <p id="respostaex2"></p>
+    </div>
+
+    <div class="ex3">
+      <p>Exercício 3:</p>
+      <button onclick="NumAleatorio()">Gerar número aleatório</button>
+      <p id="respostaex3"></p>
+    </div>
+
+    <div class="ex4">
+      <p>Exercício 4:</p>
+      <input type="text" id="url" />
+      <button onclick="AbrirUrl()">Abrir Url</button>
+    </div>
+
+    <div class="ex5">
+      <p>Exercício 5:</p>
+      <input type="text" id="alterartitulo" />
+      <button onclick="AlteraTitulo()">Alterar título</button>
+    </div>
+    <div class="ex6">
+      <div id="divalterarcor" class="div6">
+        <select id="sel6" onchange="MudaCor()">
+          <option value="escolhaacor">Escolha a cor</option>
+          <option value="vermelho">vermelho</option>
+          <option value="azul">azul</option>
+          <option value="verde">verde</option>
+        </select>
+        <p>Exercício 6</p>
+      </div>
+    </div>
+
+    <div class="ex8">
+      <p>Exercício 8:</p>
+      <input onblur="trocarVogal()" id="texto" type="text" />
     </div>
   </body>
 </html>
