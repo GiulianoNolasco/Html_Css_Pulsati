@@ -129,12 +129,3 @@ window.onload = () => {
   let tamanhotela = document.querySelector("#tamanhotela");
   tamanhotela.innerHTML = dimensao;
 };
-
-/* Ex 10 ####################################################################*/
-
-const videoSelect = document.querySelector("#sel10");
-const videoPlayer = document.querySelector("#videoPlayer");
-videoSelect.addEventListener("change", (event) => {
-  const selectedVideo = event.target.value;
-  videoPlayer.setAttribute("src", selectedVideo);
-});

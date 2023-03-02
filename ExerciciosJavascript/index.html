@@ -98,7 +98,7 @@
           <option value="https://www.youtube.com/watch?v=JWhqE4RO8B4">
             Video 1
           </option>
-          <option value="https://www.youtube.com/watch?v=30nlBGjPRYM">
+          <option value="https://www.youtube.com/watch?v=Kq545B3q1K8">
             Video 2
           </option>
         </select>
@@ -112,6 +112,14 @@
         />
       </div>
     </div>
+    <script>
+      const videoSelect = document.querySelector("#sel10");
+      const videoPlayer = document.querySelector("#videoPlayer");
+      videoSelect.addEventListener("change", (event) => {
+        const selectedVideo = event.target.value;
+        videoPlayer.setAttribute("src", selectedVideo);
+      });
+    </script>
 
     <div class="ex11">
       <p>Exercício 11:</p>
