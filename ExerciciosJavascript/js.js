@@ -85,6 +85,20 @@ const MudaCor = () => {
   }
 };
 
+/* Ex 07 ####################################################################*/
+
+const EscondeDiv = () => {
+  let botao7 = document.querySelector("#botao7");
+  let divesconder = document.querySelector("#divesconder");
+
+  if (divesconder.classList == "aparecendo") {
+    botao7.innerHTML = "Aparecer";
+  } else {
+    botao7.innerHTML = "Esconder";
+  }
+  divesconder.classList.toggle("escondendo");
+};
+
 /* Ex 08 ####################################################################*/
 
 const trocarVogal = () => {
@@ -96,7 +110,6 @@ const trocarVogal = () => {
   }
   let resposta = "";
 
-  listaAlterada = [];
   for (let index = 0; index < lista.length; index++) {
     resposta += lista[index].replace(/a|e|i|o|u/, " ");
   }
@@ -104,3 +117,24 @@ const trocarVogal = () => {
   let tex = document.getElementById("texto");
   tex.value = resposta;
 };
+
+/* Ex 09 ####################################################################*/
+let largura = window.screen.availHeight;
+let altura = window.screen.availWidth;
+let dimensao = `O tamanho da página ao iniciar foi de:<br>
+ ${largura}px de largura<br>
+${altura}px de altura`;
+
+window.onload = () => {
+  let tamanhotela = document.querySelector("#tamanhotela");
+  tamanhotela.innerHTML = dimensao;
+};
+
+/* Ex 10 ####################################################################*/
+
+const videoSelect = document.querySelector("#sel10");
+const videoPlayer = document.querySelector("#videoPlayer");
+videoSelect.addEventListener("change", (event) => {
+  const selectedVideo = event.target.value;
+  videoPlayer.setAttribute("src", selectedVideo);
+});
